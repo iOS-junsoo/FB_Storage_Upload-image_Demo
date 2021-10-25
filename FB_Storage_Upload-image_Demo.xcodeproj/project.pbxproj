@@ -13,9 +13,13 @@
 		994D35EE2726651100C6692C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994D35EC2726651100C6692C /* Main.storyboard */; };
 		994D35F02726651400C6692C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 994D35EF2726651400C6692C /* Assets.xcassets */; };
 		994D35F32726651400C6692C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994D35F12726651400C6692C /* LaunchScreen.storyboard */; };
+		994D35FB2726676700C6692C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 994D35FA2726676700C6692C /* GoogleService-Info.plist */; };
+		A61C951A7A09A20506A65481 /* Pods_FB_Storage_Upload_image_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAF169ED6160CB2A5123AC58 /* Pods_FB_Storage_Upload_image_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		615633B23BD2CD9B7E26BCC0 /* Pods-FB_Storage_Upload-image_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FB_Storage_Upload-image_Demo.debug.xcconfig"; path = "Target Support Files/Pods-FB_Storage_Upload-image_Demo/Pods-FB_Storage_Upload-image_Demo.debug.xcconfig"; sourceTree = "<group>"; };
+		642FEE03BFD4D27E0418E72C /* Pods-FB_Storage_Upload-image_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FB_Storage_Upload-image_Demo.release.xcconfig"; path = "Target Support Files/Pods-FB_Storage_Upload-image_Demo/Pods-FB_Storage_Upload-image_Demo.release.xcconfig"; sourceTree = "<group>"; };
 		994D35E32726651100C6692C /* FB_Storage_Upload-image_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FB_Storage_Upload-image_Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		994D35E62726651100C6692C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		994D35E82726651100C6692C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,8 @@
 		994D35EF2726651400C6692C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		994D35F22726651400C6692C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		994D35F42726651400C6692C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		994D35FA2726676700C6692C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../../Users/junsugim/Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FAF169ED6160CB2A5123AC58 /* Pods_FB_Storage_Upload_image_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FB_Storage_Upload_image_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A61C951A7A09A20506A65481 /* Pods_FB_Storage_Upload_image_Demo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6288627E8A42D8F8A4ED9BA6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAF169ED6160CB2A5123AC58 /* Pods_FB_Storage_Upload_image_Demo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		994D35DA2726651100C6692C = {
 			isa = PBXGroup;
 			children = (
 				994D35E52726651100C6692C /* FB_Storage_Upload-image_Demo */,
 				994D35E42726651100C6692C /* Products */,
+				F51BE91AA9648AA02557633C /* Pods */,
+				6288627E8A42D8F8A4ED9BA6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +80,18 @@
 				994D35EF2726651400C6692C /* Assets.xcassets */,
 				994D35F12726651400C6692C /* LaunchScreen.storyboard */,
 				994D35F42726651400C6692C /* Info.plist */,
+				994D35FA2726676700C6692C /* GoogleService-Info.plist */,
 			);
 			path = "FB_Storage_Upload-image_Demo";
+			sourceTree = "<group>";
+		};
+		F51BE91AA9648AA02557633C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				615633B23BD2CD9B7E26BCC0 /* Pods-FB_Storage_Upload-image_Demo.debug.xcconfig */,
+				642FEE03BFD4D27E0418E72C /* Pods-FB_Storage_Upload-image_Demo.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 994D35F72726651400C6692C /* Build configuration list for PBXNativeTarget "FB_Storage_Upload-image_Demo" */;
 			buildPhases = (
+				40EC80413A9CA13E766B54B6 /* [CP] Check Pods Manifest.lock */,
 				994D35DF2726651100C6692C /* Sources */,
 				994D35E02726651100C6692C /* Frameworks */,
 				994D35E12726651100C6692C /* Resources */,
+				D6416F38F7CB2790EAB2394A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +155,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				994D35F32726651400C6692C /* LaunchScreen.storyboard in Resources */,
+				994D35FB2726676700C6692C /* GoogleService-Info.plist in Resources */,
 				994D35F02726651400C6692C /* Assets.xcassets in Resources */,
 				994D35EE2726651100C6692C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40EC80413A9CA13E766B54B6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FB_Storage_Upload-image_Demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D6416F38F7CB2790EAB2394A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FB_Storage_Upload-image_Demo/Pods-FB_Storage_Upload-image_Demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FB_Storage_Upload-image_Demo/Pods-FB_Storage_Upload-image_Demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FB_Storage_Upload-image_Demo/Pods-FB_Storage_Upload-image_Demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		994D35DF2726651100C6692C /* Sources */ = {
@@ -284,6 +356,7 @@
 		};
 		994D35F82726651400C6692C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 615633B23BD2CD9B7E26BCC0 /* Pods-FB_Storage_Upload-image_Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -312,6 +385,7 @@
 		};
 		994D35F92726651400C6692C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 642FEE03BFD4D27E0418E72C /* Pods-FB_Storage_Upload-image_Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
